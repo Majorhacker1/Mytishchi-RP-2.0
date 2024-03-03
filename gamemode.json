@@ -1,0 +1,50 @@
+{
+    "ApiVersion": 2,
+    "Name": "Mytishchi RP - Beta Version",
+    "Description": "Бета версия, РП режима от ᎷᎯᏠᎾᏒ ᏕᎾᏰᏒ", 
+    "MapLists__": [
+      {
+        "MapListId": 48860,
+        "Name": "Мытищи (Зима) "
+      }
+    ],
+    "Parameters": {
+      "Bool": [
+        {
+          "Name": "RedTeam",
+          "DisplayName": "МВД и Росгвардия",
+          "Default": true
+        },
+        {
+          "Name": "BlueTeam",
+          "DisplayName": "Граждане",
+          "Default": true
+        }, 
+        {
+          "Name": "GreenTeam",
+          "DisplayName": "Военнослужащие",
+          "Default": true
+        }, 
+        {
+          "Name": "BlackTeam", 
+          "DisplayName": "Рецидивисты",
+          "Default": true
+         },
+         {
+          "Name": "Огонь По Своим",
+          "DisplayName": "Огонь По Своим",
+          "Default": false
+        }, 
+        {
+          "Name": "Урон",
+          "DisplayName": "Урон",
+          "Default": true
+        },
+        {
+          "Name": "ГНИО",
+          "DisplayName": "ГНИО",
+          "Default": true
+        },   
+      ]
+    }
+  }
