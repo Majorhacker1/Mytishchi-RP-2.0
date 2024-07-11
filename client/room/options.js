@@ -59,7 +59,7 @@ export function apply_room_options() {
 
 // задает настройки режима мир
 export function configure() {
-    room.Properties.GetContext().GameModeName.Value = "GameModes/Peace";// задаем название режима
+    room.Properties.GetContext().GameModeName.Value = "GameModes/RP";// задаем название режима
     room.Ui.GetContext().Hint.Value = "Добро пожаловать в Мытищи";// выводим подсказку
     room.Ui.GetContext().QuadsCount.Value = true;// выводим количество квадов на карте
     room.BreackGraph.BreackAll = true; // делаем так, чтобы можно было сломать любой блок
@@ -73,6 +73,8 @@ export function create_teams() {
     // создаем команды
     const roomParameters = room.GameMode.Parameters;
     const hasRedTeam = roomParameters.GetBool("RedTeam");
+    const hasBlackTeam = roomParameters.GetBool("BlackTeam");
+    const hasGreenTeam = roomParameters.GetBool("GreenTeam");
     const hasBlueTeam = roomParameters.GetBool("BlueTeam");
     if (hasRedTeam || !hasRedTeam && !hasBlueTeam) {
         teams.create_team_red();
