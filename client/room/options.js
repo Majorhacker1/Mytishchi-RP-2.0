@@ -1,6 +1,6 @@
 import { Build, Inventory } from 'pixel_combats/room';
 
-// разрешаем все что можно для редактора
+// разрешаем все что можно для РП
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
     roomInventory.MainInfinity.Value = true;
@@ -11,7 +11,9 @@ export function set_editor_inventory() {
     roomInventory.BuildInfinity.Value = true;
 }
 
-export function set_editor_options() {
+export function set_RP_options() {
+    Damage.GetContext().FriendlyFire.Value = GameMode.Parameters.GetBool("Огонь По Своим");
+    Damage.GetContext().DamageOut.Value = true
     Build.GetContext().Pipette.Value = true;
     Build.GetContext().FloodFill.Value = false;
     Build.GetContext().FillQuad.Value = false;
