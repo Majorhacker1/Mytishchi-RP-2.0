@@ -1,41 +1,39 @@
-import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns } from 'pixel_combats/room';
-import * as peace from './options.js';
-import * as teams from './default_teams.js';
+// Команды меню №1
 
-// разрешения
-Damage.FriendlyFire = true;
-BreackGraph.OnlyPlayerBlocksDmg = false;
-BreackGraph.WeakBlocks = true;
-// делаем возможным ломать все блоки
+Damage.GetContext(). FriendlyFire.Value= GameMode. Parameters.GetBool ("Огонь По Своим" );
+
+Damage.GetContext().DamageOut.Value = true
+
+BreackGraph.OnlyPlayerBlocksDmg = GameMode. Parameters.GetBool ("PartialDesruction");
+
+BreackGraph.WeakBlocks GameMode. Parameters
+
+.GetBool ("LoosenBlocks");
+
+Build.GetContext().FloodFill.Value = GameMode.Parameters.GetBool ("FloodFill");
+
+Build.GetContext(). FillQuad.Value = GameMode .Parameters.GetBool ("FillQuad");
+
+Build.GetContext(). RemoveQuad.Value = GameMode. Parameters.GetBool ("RemoveQuad");
+
+Build.GetContext(). FlyEnable.Value = GameMode.Parameters.GetBool ("Fly");
+
+// Разрушаемость
+
 BreackGraph.BreackAll = true;
-// показываем количество квадов
-Ui.GetContext().QuadsCount.Value = true;
-// разрешаем все чистые блоки
-Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
-// вкл строительные опции
-peace.set_editor_options();
 
-// запрет нанесения урона
-Damage.GetContext().DamageOut.Value =true;
+// Счётчик прямоугольников
 
-// параметры игры
-Properties.GetContext().GameModeName.Value = "Peace";
-// создаем команды
-var red = GameMode.Parameters.GetBool("МВД");
-var blue = GameMode.Parameters.GetBool("Гражданские");
-if (red || !red && !blue) teams.create_team_red();
-if (blue || !red && !blue) teams.create_team_blue();
+Ui.GetContext(). QuadsCount.Value = false;
 
-// разрешаем вход в команды по запросу
-Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
-// спавн по входу в команду
-Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
+// Интерфейс и функционал
 
-// задаем подсказку
-Ui.getContext().Hint.Value = "Добро пожаловать в Мытищи";
+Build.GetContext(). Pipette.Value = true;
 
-// конфигурация инвентаря
-peace.set_editor_inventory();
+Build.GetContext(). BalkLenChange.Value = false;
 
-//время спавна
-Spawns.GetContext().RespawnTime.Value = 5;
+Build.GetContext().SetSkyEnable.Value =
+
+false;
+
+Build.GetContext().GenMapEnable.Value = false;
