@@ -55,6 +55,36 @@ if(GameMode.Parameters.GetBool ("ГНИО")) {
 var inventory Inventory.GetContext();
 
 
-Teams.Get("Blue"). Inventory.Main.Value = false;
+Teams.Get("Blue").Inventory.Main.Value = false;
 
-Teams.Get("Blue"). Inventory.Secondary.Value
+Teams.Get("Blue").Inventory.Secondary.Value = false
+
+Teams.Get("Blue").Inventory.Melee.Value = false;
+
+Teams.Get("Blue").Inventory.Explosive.Value = false;
+
+Teams.Get("Blue").Inventory.Build.Value = false;
+
+       }
+}
+
+// Функционал №1
+
+Teams. OnRequest Join Team.Add(function(player,team) {team.Add(player); });
+
+// Финкционал №2
+
+Teams.OnPlayerChangeTeam.Add(function(player ){ player. Spawns.Spawn()});
+
+// Приветствующая таблица
+
+Ui.getContext().Hint.Value = "Добро пожаловать в Мытищи РП";
+
+// Инвентарь
+
+var inventory = Inventory.GetContext();
+inventory. MainInfinity.Value = true;
+inventory. Secondary Infinity.Value = true;
+inventory. Melee.Value = true;
+inventory. Explosive.Value = true;
+inventory.Build.Value = true:
