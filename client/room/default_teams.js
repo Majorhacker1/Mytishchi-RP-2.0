@@ -31,7 +31,7 @@ export function create_team_black() {
 }
 
 export function create_team_green() {
-    Teams.Add(GREEN_TEAM_NAME, GREEN_TEAM_DISPLAY_NAME, new Color(1, 0, 0, 0));
+    Teams.Add(GREEN_TEAM_NAME, GREEN_TEAM_DISPLAY_NAME, new Color(0, 0, 0, 1));
     Teams.Get(GREEN_TEAM_NAME).Spawns.SpawnPointsGroups.Add(GREEN_TEAM_SPAWN_POINTS_GROUP);
     return Teams.Get(GREEN_TEAM_NAME);
 }
