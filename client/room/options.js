@@ -1,4 +1,5 @@
-import { Build, Inventory } from 'pixel_combats/room';
+import * as room from 'pixel_combats/room';
+import * as teams from './default_teams.js';
 
 // разрешаем все что можно для РП
 export function set_editor_inventory() {
