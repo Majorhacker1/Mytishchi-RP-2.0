@@ -1,4 +1,4 @@
-import * as peace from './peace_library.js';
+import * as RP from './RP_library.js';
 
-peace.configure();
-peace.create_teams();
+RP.configure();
+RP.create_teams();
