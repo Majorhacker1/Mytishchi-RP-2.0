@@ -23,3 +23,15 @@ export function create_team_blue() {
     Teams.Get(BLUE_TEAM_NAME).Spawns.SpawnPointsGroups.Add(BLUE_TEAM_SPAWN_POINTS_GROUP);
     return Teams.Get(BLUE_TEAM_NAME);
 }
+
+export function create_team_black() {
+    Teams.Add(BLACK_TEAM_NAME, BLACK_TEAM_DISPLAY_NAME, new Color(0, 1, 0, 0));
+    Teams.Get(BLACK_TEAM_NAME).Spawns.SpawnPointsGroups.Add(BLACK_TEAM_SPAWN_POINTS_GROUP);
+    return Teams.Get(BLACK_TEAM_NAME);
+}
+
+export function create_team_green() {
+    Teams.Add(GREEN_TEAM_NAME, GREEN_TEAM_DISPLAY_NAME, new Color(1, 0, 0, 0));
+    Teams.Get(GREEN_TEAM_NAME).Spawns.SpawnPointsGroups.Add(GREEN_TEAM_SPAWN_POINTS_GROUP);
+    return Teams.Get(GREEN_TEAM_NAME);
+}
