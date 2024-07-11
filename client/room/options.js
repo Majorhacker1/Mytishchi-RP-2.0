@@ -10,6 +10,16 @@ export function set_editor_inventory() {
     roomInventory.Build.Value = true;
     roomInventory.BuildInfinity.Value = true;
 }
+    
+    if(GameMode.Parameters.GetBool("ГНИО")){
+
+    var roomInventory = Inventory.GetContext();
+    Teams.Get("Blue").Inventory.Main.Value = false;
+    Teams.Get("Blue").Inventory.Secondary.Value = false;
+    Teams.Get("Blue").Inventory.Melee.Value = false;
+    Teams.Get("Blue").Inventory.Explosive.Value = false;
+    Teams.Get("Blue").Inventory.Build.Value = false;
+
 
 export function set_RP_options() {
     Damage.GetContext().FriendlyFire.Value = GameMode.Parameters.GetBool("Огонь По Своим");
