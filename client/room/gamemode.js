@@ -82,8 +82,14 @@ Ui.getContext().Hint.Value = "Добро пожаловать в Мытищи Р
 // Инвентарь
 
 var inventory = Inventory.GetContext();
-inventory. MainInfinity.Value = true;
-inventory. Secondary Infinity.Value = true;
-inventory. Melee.Value = true;
-inventory. Explosive.Value = true;
+inventory.MainInfinity.Value = true;
+inventory.SecondaryInfinity.Value = true;
+inventory.Melee.Value = true;
+inventory.Explosive.Value = true;
 inventory.Build.Value = true:
+
+// Функционал №3
+Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
+
+// Время возраждения
+Spawns.GetContext(). RespawnTime.Value = 5;
