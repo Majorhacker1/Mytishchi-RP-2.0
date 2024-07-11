@@ -1,14 +1,12 @@
 // Команды меню №1
 
-Damage.GetContext(). FriendlyFire.Value= GameMode. Parameters.GetBool ("Огонь По Своим" );
+Damage.GetContext(). FriendlyFire.Value= GameMode. Parameters.GetBool ("Огонь По Своим");
 
 Damage.GetContext().DamageOut.Value = true
 
 BreackGraph.OnlyPlayerBlocksDmg = GameMode. Parameters.GetBool ("PartialDesruction");
 
-BreackGraph.WeakBlocks GameMode. Parameters
-
-.GetBool ("LoosenBlocks");
+BreackGraph.WeakBlocks GameMode. Parameters.GetBool ("LoosenBlocks");
 
 Build.GetContext().FloodFill.Value = GameMode.Parameters.GetBool ("FloodFill");
 
@@ -32,8 +30,6 @@ Build.GetContext(). Pipette.Value = true;
 
 Build.GetContext(). BalkLenChange.Value = false;
 
-Build.GetContext().SetSkyEnable.Value =
-
-false;
+Build.GetContext().SetSkyEnable.Value = false;
 
 Build.GetContext().GenMapEnable.Value = false;
