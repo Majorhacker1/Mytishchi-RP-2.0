@@ -1,3 +1,5 @@
+import * as peace from './options.js';
+
 // Константа
 Properties.GetContext(). GameModeName.Value = "GameModes/Mytishchi RP";
 // Команды
