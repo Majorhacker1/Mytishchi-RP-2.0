@@ -64,8 +64,7 @@ Teams.Get("Blue").Inventory.Melee.Value = false;
 Teams.Get("Blue").Inventory.Explosive.Value = false;
 
 Teams.Get("Blue").Inventory.Build.Value = false;
-
-       }
+        }
 }
 
 // Функционал №1
