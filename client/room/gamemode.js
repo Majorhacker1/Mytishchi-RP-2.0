@@ -1,4 +1,3 @@
-l
 // Константа
 Properties.GetContext(). GameModeName.Value = "GameModes/Mytishchi RP";
 // Команды
