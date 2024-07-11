@@ -16,3 +16,19 @@ Build.GetContext(). Pipette.Value = true;
 Build.GetContext(). BalkLenChange.Value = false;
 Build.GetContext().SetSkyEnable.Value = false;
 Build.GetContext().GenMapEnable.Value = false;
+Build.GetContext().ChangeCamera PointsEnable. Value = false;
+Build.GetContext(). QuadChangeEnable.Value = false;
+Build.GetContext(). BuildModeEnable.Value = false;
+Build.GetContext().CollapseChangeEnable. Value = false;
+Build.GetContext(). RenameMapEnable.Value = false;
+Build.GetContext().ChangeMapAuthorsEnable. Value = false;
+Build.GetContext(). LoadMapEnable.Value = true;
+Build.GetContext().ChangeSpawnsEnable.Value = false;
+// Константа
+Properties.GetContext(). GameModeName.Value = "GameModes/Mytishchi RP";
+// Команды
+blue GameMode.Parameters.GetBool("BlueTeam");
+red GameMode.Parameters.GetBool("RedTeam")
+black GameMode.Parameters.GetBool("BlackTeam");
+green GameMode.Parameters.GetBool("GreenTeam");
+if (red || !red && ! blue)
