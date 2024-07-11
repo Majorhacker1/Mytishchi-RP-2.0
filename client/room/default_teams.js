@@ -11,6 +11,8 @@ export const BLACK_TEAM_DISPLAY_NAME = "Рецидивисты";
 export const GREEN_TEAM_DISPLAY_NAME = "Военные";
 export const BLUE_TEAM_SPAWN_POINTS_GROUP = 1;
 export const RED_TEAM_SPAWN_POINTS_GROUP = 2;
+export const BLACK_TEAM_SPAWN_POINTS_GROUP = 2;
+export const GREEN_TEAM_SPAWN_POINTS_GROUP = 2;
 
 export function create_team_red() {
     Teams.Add(RED_TEAM_NAME, RED_TEAM_DISPLAY_NAME, new Color(1, 0, 0, 0));
