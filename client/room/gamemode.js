@@ -22,7 +22,7 @@ Damage.GetContext().DamageOut.Value =true;
 Properties.GetContext().GameModeName.Value = "Peace";
 // создаем команды
 var red = GameMode.Parameters.GetBool("МВД");
-var blue = GameMode.Parameters.GetBool(" Гражданские");
+var blue = GameMode.Parameters.GetBool("Гражданские");
 if (red || !red && !blue) teams.create_team_red();
 if (blue || !red && !blue) teams.create_team_blue();
 
