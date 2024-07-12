@@ -59,7 +59,7 @@ export function apply_room_options() {
 
 // задает настройки режима мир
 export function configure() {
-    room.Properties.GetContext().GameModeName.Value = "GameModes/RP";// задаем название режима
+    room.Properties.GetContext().GameModeName.Value = "GameModes/peace";// задаем название режима
     room.Ui.GetContext().Hint.Value = "Добро пожаловать в Мытищи";// выводим подсказку
     room.Ui.GetContext().QuadsCount.Value = true;// выводим количество квадов на карте
     room.BreackGraph.BreackAll = true; // делаем так, чтобы можно было сломать любой блок
