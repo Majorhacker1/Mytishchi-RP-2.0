@@ -52,7 +52,7 @@ export function apply_room_options() {
 
     // прочие опции
     room.Damage.GetContext().FriendlyFire.Value = GameMode.Parameters.GetBool("Огонь По Своим");
-    room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
+    room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Урон");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
 }
@@ -73,8 +73,6 @@ export function create_teams() {
     // создаем команды
     const roomParameters = room.GameMode.Parameters;
     const hasRedTeam = roomParameters.GetBool("RedTeam");
-    const hasBlackTeam = roomParameters.GetBool("BlackTeam");
-    const hasGreenTeam = roomParameters.GetBool("GreenTeam");
     const hasBlueTeam = roomParameters.GetBool("BlueTeam");
     if (hasRedTeam || !hasRedTeam && !hasBlueTeam) {
         teams.create_team_red();
