@@ -19,7 +19,7 @@ function set_build_settings() {
     context.BalkLenChange.Value = false;
     context.SetSkyEnable.Value = false;
     context.GenMapEnable.Value = false;
-    context.ChangeCameraPointsEnable.Value = false;
+    context.ChangeCameraPointsEnable.Value = true;
     context.QuadChangeEnable.Value = false;
     context.BuildModeEnable.Value = false;
     context.CollapseChangeEnable.Value = false;
