@@ -91,3 +91,13 @@ export function create_teams() {
     // если игрок сменил команду или выбрал ее, то происходит спавн игрока
     room.Teams.OnPlayerChangeTeam.Add(function (player) { player.Spawns.Spawn() });
   }
+
+    // Создание двух новых команд
+function create_new_team(teamName) {
+    const newTeam = teams.create_team(teamName); // Предположим, что у вас есть функция create_team, которая создает команду с заданным именем
+    // Дополнительная логика, если необходимо
+}
+
+// Создание двух новых команд
+create_new_team("GreenTeam");
+create_new_team("YellowTeam");
